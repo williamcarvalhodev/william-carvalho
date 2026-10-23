@@ -142,6 +142,165 @@ body {
     display: none;
 }
 
+/* Hero Section */
+.hero {
+    width: 100%;
+    padding: 100px 30px 120px;
+    overflow: hidden;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.hero-label {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.hero-label span:first-child {
+    color: var(--color-accent);
+}
+
+.hero-title {
+    margin: 0;
+    font-family: var(--font-lovelo);
+    font-size: clamp(64px, 6.2vw, 110px);
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.hero-dot {
+    color: var(--color-accent);
+}
+
+.hero-description {
+    width: 100%;
+    max-width: 520px;
+    margin: 40px 0 0;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-cta {
+    padding: 16px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent);
+    color: var(--color-dark);
+    font-family: var(--font-lekton);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.hero-cta:hover {
+    background: var(--color-dark);
+    color: var(--color-bg);
+    transform: translateY(-2px);
+}
+
+.hero-scroll {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.hero-scroll:hover {
+    color: var(--color-accent);
+}
+
+.hero-visual {
+    width: 100%;
+    min-width: 0;
+}
+
+.hero-image {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-image-caption {
+    width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-image-caption p {
+    margin: 0;
+    color: var(--color-dark);
+    font-family: var(--font-lekton);
+    font-size: 13px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.hero-image-caption>span {
+    color: var(--color-accent);
+
+    font-family: var(--font-lekton);
+    font-size: 13px;
+}
+
 /* Footer */
 .site-footer {
     padding: 70px 0 30px;
@@ -265,14 +424,11 @@ body {
 .footer-bottom {
     width: 100%;
     max-width: 1200px;
-
     margin-inline: auto;
     padding-top: 24px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
 }
 
@@ -323,6 +479,62 @@ body {
     .header-cta {
         padding: 10px 13px;
         font-size: 12px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 80px 20px 100px;
+    }
+
+    .hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .hero-label {
+        margin-bottom: 24px;
+        font-size: 11px;
+    }
+
+    .hero-title {
+        font-size: clamp(52px, 6vw, 82px);
+        line-height: 0.9;
+    }
+
+    .hero-description {
+        max-width: 440px;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .hero-actions {
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .hero-cta {
+        padding: 14px 18px;
+        font-size: 12px;
+    }
+
+    .hero-scroll {
+        font-size: 11px;
+    }
+
+    .hero-image img {
+        max-width: 560px;
+    }
+
+    .hero-image-caption {
+        max-width: 560px;
+
+        padding-top: 16px;
+    }
+
+    .hero-image-caption p,
+    .hero-image-caption > span {
+        font-size: 11px;
     }
 
     /* Footer */
@@ -474,6 +686,41 @@ body {
         cursor: pointer;
     }
 
+    /* Hero Section */
+    .hero {
+        padding: 70px 20px 90px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 620px;
+    }
+
+    .hero-title {
+        font-size: clamp(54px, 11vw, 86px);
+        line-height: 0.88;
+    }
+
+    .hero-description {
+        max-width: 520px;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 620px;
+    }
+
+    .hero-image-caption {
+        max-width: 620px;
+    }
+
     /* Footer */
     .site-footer {
         padding: 20px 10px;
@@ -551,6 +798,63 @@ body {
 
     .header-cta {
         display: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 55px 20px 70px;
+    }
+
+    .hero-container {
+        gap: 40px;
+    }
+
+    .hero-label {
+        margin-bottom: 20px;
+        gap: 8px;
+        font-size: 10px;
+    }
+
+    .hero-title {
+        font-size: clamp(44px, 14vw, 64px);
+        line-height: 0.9;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-description {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero-actions {
+        margin-top: 28px;
+
+        flex-wrap: wrap;
+
+        gap: 18px;
+    }
+
+    .hero-cta {
+        padding: 13px 16px;
+        font-size: 11px;
+    }
+
+    .hero-scroll {
+        font-size: 10px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .hero-image-caption {
+        padding-top: 14px;
+    }
+
+    .hero-image-caption p,
+    .hero-image-caption > span {
+        font-size: 10px;
     }
 
     /* Footer */
