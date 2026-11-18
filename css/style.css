@@ -1386,6 +1386,124 @@ body {
     border-bottom: 0;
 }
 
+/* CTA Section */
+.about-cta {
+    width: 100%;
+    padding: 110px 40px;
+    border-top: 1px solid rgba(23, 23, 23, 0.12);
+}
+
+.about-cta-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.about-cta-label {
+    margin-bottom: 35px;
+}
+
+.about-cta-label .section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.about-cta-label .section-label span:first-child {
+    color: var(--color-accent);
+}
+
+.about-cta-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.about-cta-heading {
+    padding-right: 50px;
+    border-right: 1px solid rgba(23, 23, 23, 0.16);
+}
+
+.about-cta-heading h2 {
+    margin: 0;
+    font-family: var(--font-lovelo);
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.about-cta-message {
+    width: 100%;
+    max-width: 580px;
+}
+
+.about-cta-message p {
+    margin: 0 0 30px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.about-cta-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.about-cta-primary {
+    padding: 16px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent);
+    color: var(--color-dark);
+    font-family: var(--font-lekton);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.about-cta-primary:hover {
+    background: var(--color-dark);
+    color: var(--color-bg);
+    transform: translateY(-2px);
+}
+
+.about-cta-secondary {
+    padding-left: 22px;
+    border-left: 1px solid rgba(23, 23, 23, 0.22);
+    color: var(--color-dark);
+    font-family: var(--font-lekton);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.about-cta-secondary:hover {
+    color: var(--color-accent);
+    transform: translateX(4px);
+}
+
 /* Footer */
 .site-footer {
     padding: 70px 0 30px;
@@ -1673,6 +1791,28 @@ body {
 
     .about-skills-heading h2 {
         font-size: 60px;
+    }
+
+    /* CTA Section */
+    .about-cta {
+        padding: 90px 50px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 60px;
+    }
+
+    .about-cta-message p {
+        font-size: 15px;
+    }
+
+    .about-cta-primary {
+        padding: 16px 22px;
+        font-size: 14px;
+    }
+
+    .about-cta-secondary {
+        font-size: 14px;
     }
 
 }
@@ -2279,6 +2419,28 @@ body {
     .skills-group li {
         padding: 9px 0;
         font-size: 13px;
+    }
+
+    /* CTA Section */
+    .about-cta {
+        padding: 60px 50px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 50px;
+    }
+
+    .about-cta-message p {
+        font-size: 14px;
+    }
+
+    .about-cta-primary {
+        padding: 14px 18px;
+        font-size: 12px;
+    }
+
+    .about-cta-secondary {
+        font-size: 12px;
     }
 
     /* Footer */
@@ -2977,6 +3139,52 @@ body {
         font-size: 12px;
     }
 
+    /* CTA Section */
+    .about-cta {
+        padding: 60px 40px;
+    }
+
+    .about-cta-label {
+        margin-bottom: 30px;
+    }
+
+    .about-cta-label .section-label {
+        font-size: 10px;
+    }
+
+    .about-cta-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-cta-heading {
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(23, 23, 23, 0.16);
+    }
+
+    .about-cta-heading h2 {
+        font-size: 50px;
+    }
+
+    .about-cta-message {
+        max-width: 560px;
+    }
+
+    .about-cta-message p {
+        font-size: 13px;
+    }
+
+    .about-cta-actions {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .about-cta-secondary {
+        padding-left: 18px;
+    }
+
     /* Footer */
     .site-footer {
         padding: 20px 10px;
@@ -3325,7 +3533,7 @@ body {
         font-size: 26px;
     }
 
-     /* Skills sections */
+    /* Skills sections */
     .about-skills {
         padding: 40px 25px;
     }
@@ -3340,6 +3548,28 @@ body {
 
     .skills-group li {
         font-size: 10px;
+    }
+
+    /* CTA Section */
+    .about-cta {
+        padding: 40px 25px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 45px;
+    }
+
+    .about-cta-message p {
+        font-size: 13px;
+    }
+
+    .about-cta-primary {
+        padding: 13px 16px;
+        font-size: 11px;
+    }
+
+    .about-cta-secondary {
+        font-size: 11px;
     }
 
     /* Footer */
