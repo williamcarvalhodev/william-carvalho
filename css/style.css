@@ -356,10 +356,6 @@ body {
     color: var(--color-dark);
 }
 
-.section-dot {
-    color: var(--color-accent);
-}
-
 .featured-projects-intro {
     width: 100%;
     margin: 0;
@@ -1431,17 +1427,6 @@ body {
     border-right: 1px solid rgba(23, 23, 23, 0.16);
 }
 
-.about-cta-heading h2 {
-    margin: 0;
-    font-family: var(--font-lovelo);
-    font-size: 70px;
-    font-weight: 900;
-    line-height: 0.88;
-    letter-spacing: -0.035em;
-    text-transform: uppercase;
-    color: var(--color-dark);
-}
-
 .about-cta-message {
     width: 100%;
     max-width: 580px;
@@ -1502,6 +1487,69 @@ body {
 .about-cta-secondary:hover {
     color: var(--color-accent);
     transform: translateX(4px);
+}
+
+/* Projects Hero Section */
+.projects-page-hero {
+    width: 100%;
+    padding: 100px 30px;
+    border-bottom: 1px solid rgba(23, 23, 23, 0.12);
+}
+
+.projects-page-hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 90px;
+    align-items: end;
+}
+
+.projects-page-hero-heading {
+    width: 100%;
+}
+
+.projects-page-label {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.projects-page-label span:first-child {
+    color: var(--color-accent);
+}
+
+.projects-page-hero-heading h1 {
+    margin: 0;
+    font-family: var(--font-lovelo);
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.projects-page-hero-intro {
+    width: 100%;
+    max-width: 520px;
+    padding-left: 50px;
+    border-left: 1px solid rgba(23, 23, 23, 0.16);
+}
+
+.projects-page-hero-intro p {
+    margin: 0 0 30px;
+    color: var(--color-gray);
+    font-family: var(--font-lekton);
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -1798,10 +1846,6 @@ body {
         padding: 90px 50px;
     }
 
-    .about-cta-heading h2 {
-        font-size: 60px;
-    }
-
     .about-cta-message p {
         font-size: 15px;
     }
@@ -1813,6 +1857,19 @@ body {
 
     .about-cta-secondary {
         font-size: 14px;
+    }
+
+    /* Projects Hero Section */
+    .projects-page-hero {
+        padding: 90px 50px;
+    }
+
+    .projects-page-hero-heading h1 {
+        font-size: 72px;
+    }
+
+    .projects-page-hero-intro p {
+        font-size: 17px;
     }
 
 }
@@ -2426,10 +2483,6 @@ body {
         padding: 60px 50px;
     }
 
-    .about-cta-heading h2 {
-        font-size: 50px;
-    }
-
     .about-cta-message p {
         font-size: 14px;
     }
@@ -2441,6 +2494,32 @@ body {
 
     .about-cta-secondary {
         font-size: 12px;
+    }
+
+    /* Projects Hero Section */
+    .projects-page-hero {
+        padding: 60px 40px;
+    }
+
+    .projects-page-hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+
+    .projects-page-hero-heading h1 {
+        font-size: 60px;
+    }
+
+    .projects-page-hero-intro {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid rgba(23, 23, 23, 0.16);
+    }
+
+    .projects-page-hero-intro p {
+        margin-top: 24px;
+        font-size: 15px;
     }
 
     /* Footer */
@@ -3139,50 +3218,22 @@ body {
         font-size: 12px;
     }
 
-    /* CTA Section */
-    .about-cta {
+    /* Projects Hero Section */
+    .projects-page-hero {
         padding: 60px 40px;
     }
 
-    .about-cta-label {
-        margin-bottom: 30px;
+    .projects-page-hero-container {
+        gap: 20px;
+    }
+    
+    .projects-page-hero-heading h1 {
+        font-size: 60px;
     }
 
-    .about-cta-label .section-label {
-        font-size: 10px;
-    }
-
-    .about-cta-content {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .about-cta-heading {
-        padding-right: 0;
-        padding-bottom: 30px;
-        border-right: 0;
-        border-bottom: 1px solid rgba(23, 23, 23, 0.16);
-    }
-
-    .about-cta-heading h2 {
-        font-size: 50px;
-    }
-
-    .about-cta-message {
-        max-width: 560px;
-    }
-
-    .about-cta-message p {
-        font-size: 13px;
-    }
-
-    .about-cta-actions {
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .about-cta-secondary {
-        padding-left: 18px;
+    .projects-page-hero-intro p {
+        margin-top: 24px;
+        font-size: 15px;
     }
 
     /* Footer */
@@ -3555,10 +3606,6 @@ body {
         padding: 40px 25px;
     }
 
-    .about-cta-heading h2 {
-        font-size: 45px;
-    }
-
     .about-cta-message p {
         font-size: 13px;
     }
@@ -3570,6 +3617,16 @@ body {
 
     .about-cta-secondary {
         font-size: 11px;
+    }
+
+    /* Projects Hero Section */
+    .projects-page-hero {
+        padding: 40px 25px;
+    }
+
+
+    .projects-page-hero-intro p {
+        font-size: 13px;
     }
 
     /* Footer */
