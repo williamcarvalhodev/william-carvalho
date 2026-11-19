@@ -1427,6 +1427,19 @@ body {
     border-right: 1px solid rgba(23, 23, 23, 0.16);
 }
 
+.about-cta-heading h2 {
+    margin: 0;
+    font-family: var(--font-lovelo);
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+
+
 .about-cta-message {
     width: 100%;
     max-width: 580px;
@@ -1664,6 +1677,8 @@ body {
     color: var(--color-accent);
     transform: translateX(4px);
 }
+
+
 
 /* Footer */
 .site-footer {
@@ -1957,6 +1972,10 @@ body {
     /* CTA Section */
     .about-cta {
         padding: 90px 50px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 50px;
     }
 
     .about-cta-message p {
@@ -2616,6 +2635,10 @@ body {
     /* CTA Section */
     .about-cta {
         padding: 60px 50px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 40px;
     }
 
     .about-cta-message p {
@@ -3362,10 +3385,6 @@ body {
         padding: 60px 40px;
     }
 
-    .about-skills-heading h2 {
-        font-size: 50px;
-    }
-
     .skills-group h3 {
         margin-bottom: 18px;
         font-size: 16px;
@@ -3374,6 +3393,53 @@ body {
     .skills-group li {
         padding: 9px 0;
         font-size: 12px;
+    }
+
+    /* Projects CTA */
+    .about-cta {
+        padding: 60px 40px;
+    }
+
+    .about-cta-label {
+        margin-bottom: 30px;
+    }
+
+    .about-cta-label .section-label {
+        font-size: 10px;
+    }
+
+    .about-cta-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .about-cta-heading {
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(23, 23, 23, 0.16);
+    }
+
+    .about-cta-heading h2 {
+        font-size: 37px;
+    }
+
+    .about-cta-message {
+        max-width: 560px;
+    }
+
+    .about-cta-message p {
+        font-size: 12px;
+    }
+
+    .about-cta-actions {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .about-cta-secondary {
+        padding-left: 18px;
     }
 
     /* Projects Hero Section */
@@ -3808,6 +3874,10 @@ body {
     /* CTA Section */
     .about-cta {
         padding: 40px 25px;
+    }
+
+    .about-cta-heading h2 {
+        font-size: 31px;
     }
 
     .about-cta-message p {
