@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Lovelo Black";
+    src: url("https://st0.dancf.com/csc/13/fonts/0/20170301-163814-2.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap');
+
+
 /* Base */
 *,
 *::before,
