@@ -70,7 +70,97 @@
 
     <!-- Main Section -->
     <main>
-     </main>
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container contact-hero-container">
+                <div class="contact-hero-heading">
+                    <div class="hero-label">
+                        <span>[01]</span>
+                        <span>Start a Conversation</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Let's Talk<span class="hero-dot">.</span>
+                    </h1>
+                </div>
+                <div class="contact-hero-intro">
+                    <p>
+                        Have a project, an idea or just want to say hello?
+                        Tell me a little about what you're working on and
+                        let's see what we can build together.
+                    </p>
+                    <a href="mailto:hello@williamcarvalhodev.com" class="contact-email">
+                        hello@williamcarvalhodev.com →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Main -->
+        <section class="contact-main">
+            <div class="container contact-main-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Location</span>
+                        <p>Dublin, Ireland</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Email</span>
+                        <a href="mailto:hello@williamcarvalhodev.com">
+                            hello@williamcarvalhodev.com
+                        </a>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Social</span>
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/william-carvalhoo/" target="_blank"
+                                rel="noopener noreferrer">
+                                LinkedIn ↗
+                            </a>
+                            <a href="https://github.com/williamcarvalhodev/" target="_blank" rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+                            <a href="https://www.instagram.com/williamcarvalhodev/" target="_blank"
+                                rel="noopener noreferrer">
+                                Instagram ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="contact-form-row">
+                        <div class="contact-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="contact-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="contact-field">
+                        <label for="subject">Project Type</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a project type</option>
+                            <option value="website">Website</option>
+                            <option value="landing-page">Landing Page</option>
+                            <option value="business">Business Solution</option>
+                            <option value="web-app">Web Application</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact-field">
+                        <label for="message">Tell me about your project</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Project goals, ideas, timeline..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit">Send message →</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="site-footer">
