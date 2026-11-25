@@ -1,483 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>William Carvalho - Web Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="site-header">
-        <div class="container header-container">
+      <div class="container header-container">
+        <!-- Website logo -->
+        <a href="index.html" class="site-logo">
+          <img src="images/full-logo-black.png" alt="William Carvalho Logo" />
+        </a>
 
-            <!-- Website logo -->
-            <a href="index.html" class="site-logo">
-                <img src="images/full-logo-black.png" alt="William Carvalho Logo">
-            </a>
+        <!-- Main navigation -->
+        <nav
+          class="main-navigation"
+          id="main-navigation"
+          aria-label="Main navigation"
+        >
+          <ul>
+            <li>
+              <a href="index.html" aria-current="page">
+                <span class="nav-number">[01]</span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <span class="nav-number">[02]</span>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html">
+                <span class="nav-number">[03]</span>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <span class="nav-number">[04]</span>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-            <!-- Main navigation -->
-            <nav class="main-navigation" id="main-navigation" aria-label="Main navigation">
-                <ul>
-                    <li>
-                        <a href="index.html" aria-current="page">
-                            <span class="nav-number">[01]</span>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <span class="nav-number">[02]</span>
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="projects.html">
-                            <span class="nav-number">[03]</span>
-                            <span>Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <span class="nav-number">[04]</span>
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- Header CTA -->
+        <a href="#" class="header-cta"> Let's Talk → </a>
 
-            <!-- Header CTA -->
-            <a href="#" class="header-cta">
-                Let's Talk →
-            </a>
-
-            <!-- Mobile menu button -->
-            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
-                aria-controls="main-navigation">
-                <i class="bi bi-list" aria-hidden="true"></i>
-            </button>
-        </div>
+        <!-- Mobile menu button -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
     </header>
 
     <!-- Main Section -->
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container hero-container">
-                <!-- Hero Content -->
-                <div class="hero-content">
-                    <div class="hero-label">
-                        <span>[01]</span>
-                        <span>Hello, I'm William Carvalho</span>
-                    </div>
-                    <h1 class="hero-title">
-                        Building<br>
-                        Ideas For<br>
-                        The Web<span class="hero-dot">.</span>
-                    </h1>
-                    <p class="hero-description">
-                        I design and develop high-performance web experiences
-                        that combine technology, precision and creativity.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="hero-cta">
-                            View my work →
-                        </a>
-                        <a href="#projects" class="hero-scroll">
-                            <span>Scroll</span>
-                            <span>↓</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- Hero Visual -->
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <img src="images/hero-banner.avif" alt="Creative web development workspace">
-                    </div>
-                </div>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-container">
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <div class="hero-label">
+              <span>[01]</span>
+              <span>Hello, I'm William Carvalho</span>
             </div>
-        </section>
-
-        <!-- Featured Projects -->
-        <section class="featured-projects" id="projects">
-            <div class="container featured-projects-container">
-                <!-- Section Header -->
-                <div class="featured-projects-header">
-                    <div class="featured-projects-heading">
-                        <div class="section-label">
-                            <span>[02]</span>
-                        </div>
-                        <h2>
-                            Featured Projects<span class="section-dot">.</span>
-                        </h2>
-                    </div>
-                    <div class="featured-projects-intro">
-                        <p>
-                            A selection of recent projects focused on design,
-                            development and digital experiences.
-                        </p>
-                        <a href="projects.html" class="section-link">
-                            View all projects →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Projects Grid -->
-                <div class="projects-grid">
-                    <!-- Project 01 -->
-                    <article class="project-card project-card-large">
-                        <a href="project.html" class="project-image">
-                            <img src="images/projects-images/project1.avif" alt="Altitude project preview">
-                        </a>
-                        <div class="project-info">
-                            <div>
-                                <span class="project-meta">
-                                    E-commerce / Outdoor · 2026
-                                </span>
-                                <h3 class="project-title">
-                                    Altitude
-                                </h3>
-                                <p>
-                                    A premium outdoor commerce experience built around exploration,
-                                    performance and visual storytelling.
-                                </p>
-                            </div>
-
-                            <a href="project.html" class="project-arrow">
-                                →
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Project 02 -->
-                    <article class="project-card project-card-small">
-                        <a href="#" class="project-image">
-                            <img src="images/projects-images/project2.avif" alt="">
-                        </a>
-                        <div class="project-info">
-                            <div>
-                                <span class="project-meta">
-                                    E-commerce / Furniture · 2026
-                                </span>
-
-                                <h3 class="project-title">
-                                    Forma
-                                </h3>
-                                <p>
-                                    A refined furniture shopping experience focused on calm layouts,
-                                    tactile visuals and effortless discovery.
-                                </p>
-                            </div>
-                            <a href="#" class="project-arrow">
-                                →
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Project 03 -->
-                    <article class="project-card project-card-medium">
-                        <a href="#" class="project-image">
-                            <img src="images/projects-images/project3.avif" alt="">
-                        </a>
-
-                        <div class="project-info">
-                            <div>
-                                <span class="project-meta">
-                                    Web App / Productivity · 2026
-                                </span>
-                                <h3 class="project-title">
-                                    Habitus
-                                </h3>
-                                <p>
-                                    A productivity platform designed to help users build better
-                                    routines, track habits and stay focused.
-                                </p>
-                            </div>
-                            <a href="#" class="project-arrow">
-                                →
-                            </a>
-                        </div>
-                    </article>
-                </div>
+            <h1 class="hero-title">
+              Building<br />
+              Ideas For<br />
+              The Web<span class="hero-dot">.</span>
+            </h1>
+            <p class="hero-description">
+              I design and develop high-performance web experiences that combine
+              technology, precision and creativity.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="hero-cta"> View my work → </a>
+              <a href="#projects" class="hero-scroll">
+                <span>Scroll</span>
+                <span>↓</span>
+              </a>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="about-preview" id="about">
-            <div class="container about-preview-container">
-                <!-- Section Heading -->
-                <div class="about-preview-heading">
-                    <div class="section-label">
-                        <span>[03]</span>
-                    </div>
-                    <h2>
-                        About Me<span class="section-dot">.</span>
-                    </h2>
-                </div>
-
-                <!-- About Content -->
-                <div class="about-preview-content">
-                    <p>
-                        I'm a Web Developer focused on creating digital experiences
-                        that make an impact. With a strong eye for design and clean code,
-                        I turn ideas into high-performance products.
-                    </p>
-                    <a href="about.html" class="about-preview-link">
-                        More about me →
-                    </a>
-                </div>
-
-                <!-- Stats -->
-                <div class="about-preview-stats">
-                    <div class="about-stat">
-                        <strong>5+</strong>
-                        <span>
-                            Years<br>
-                            Experience
-                        </span>
-                    </div>
-                    <div class="about-stat">
-                        <strong>40+</strong>
-                        <span>
-                            Projects<br>
-                            Delivered
-                        </span>
-                    </div>
-                    <div class="about-stat">
-                        <strong>20+</strong>
-                        <span>
-                            Happy<br>
-                            Clients
-                        </span>
-                    </div>
-                </div>
+          </div>
+          <!-- Hero Visual -->
+          <div class="hero-visual">
+            <div class="hero-image">
+              <img
+                src="images/hero-banner.avif"
+                alt="Creative web development workspace"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Services -->
-        <section class="services-preview" id="services">
-            <div class="container services-preview-container">
-                <div class="services-header">
-                    <div class="services-heading">
-                        <div class="section-label">
-                            <span>[04]</span>
-                        </div>
-                        <h2>Services<span class="section-dot">.</span></h2>
-                    </div>
-                    <div class="services-intro">
-                        <p>Web solutions built for businesses, brands and digital products.</p>
-                        <a href="contact.html" class="section-link">Discuss a project →</a>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <article class="service-item">
-                        <div class="service-content">
-                            <h3>Web Development</h3>
-                            <p>
-                                Responsive, high-performance websites and landing pages
-                                built with clean code and modern web technologies.
-                            </p>
-                            <a href="services.html">Learn more →</a>
-                        </div>
-                    </article>
-
-                    <article class="service-item">
-                        <div class="service-content">
-                            <h3>Digital Solutions</h3>
-                            <p>
-                                Websites and digital solutions for local businesses,
-                                including clinics, beauty salons, online stores
-                                and booking experiences.
-                            </p>
-                            <a href="services.html">Learn more →</a>
-                        </div>
-                    </article>
-
-                    <article class="service-item">
-                        <div class="service-content">
-                            <h3>Web Applications</h3>
-                            <p>
-                                Modern web applications using technologies such as
-                                JavaScript, React, Java, Spring Boot and databases.
-                            </p>
-                            <a href="services.html">Learn more →</a>
-                        </div>
-                    </article>
-                </div>
+      <!-- Featured Projects -->
+      <section class="featured-projects" id="projects">
+        <div class="container featured-projects-container">
+          <!-- Section Header -->
+          <div class="featured-projects-header">
+            <div class="featured-projects-heading">
+              <div class="section-label">
+                <span>[02]</span>
+              </div>
+              <h2>Featured Projects<span class="section-dot">.</span></h2>
             </div>
-        </section>
-
-        <!-- Process -->
-        <section class="process-preview" id="process">
-            <div class="container process-preview-container">
-                <div class="process-header">
-                    <div class="process-heading">
-                        <div class="section-label">
-                            <span>[05]</span>
-                        </div>
-                        <h2>
-                            Process<span class="section-dot">.</span>
-                        </h2>
-                    </div>
-                    <div class="process-intro">
-                        <p>A clear and collaborative process from idea to launch.</p>
-                        <a href="contact.html" class="section-link">
-                            Let's work together →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="process-grid">
-                    <article class="process-item">
-                        <div class="process-top">
-                            <span class="process-number">01</span>
-                        </div>
-                        <div class="process-content">
-                            <h3>Discovery</h3>
-                            <p>Goals, audience, requirements and project direction.</p>
-                        </div>
-                        <span class="process-arrow">→</span>
-                    </article>
-
-                    <article class="process-item">
-                        <div class="process-top">
-                            <span class="process-number">02</span>
-                        </div>
-                        <div class="process-content">
-                            <h3>Planning</h3>
-                            <p>Strategy, structure and the right technical approach.</p>
-                        </div>
-                        <span class="process-arrow">→</span>
-                    </article>
-
-                    <article class="process-item">
-                        <div class="process-top">
-                            <span class="process-number">03</span>
-                        </div>
-                        <div class="process-content">
-                            <h3>Development</h3>
-                            <p>Clean code, responsive implementation and continuous refinement.</p>
-                        </div>
-                        <span class="process-arrow">→</span>
-                    </article>
-
-                    <article class="process-item">
-                        <div class="process-top">
-                            <span class="process-number">04</span>
-                        </div>
-                        <div class="process-content">
-                            <h3>Launch</h3>
-                            <p>Testing, optimization and delivery of the final product.</p>
-                        </div>
-                    </article>
-                </div>
+            <div class="featured-projects-intro">
+              <p>
+                A selection of recent projects focused on design, development
+                and digital experiences.
+              </p>
+              <a href="projects.html" class="section-link">
+                View all projects →
+              </a>
             </div>
-        </section>
+          </div>
 
-        <!-- CTA Button -->
-        <section class="services-final-cta">
-            <div class="container services-final-cta-container">
-                <div class="services-final-cta-heading">
-                    <span class="services-final-cta-corner"></span>
-                    <h2>
-                        Have a Project<br>
-                        in Mind<span class="section-dot">?</span>
-                    </h2>
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 01 -->
+            <article class="project-card project-card-large">
+              <a href="project.html" class="project-image">
+                <img
+                  src="images/projects-images/project1.avif"
+                  alt="Altitude project preview"
+                />
+              </a>
+              <div class="project-info">
+                <div>
+                  <span class="project-meta">
+                    E-commerce / Outdoor · 2026
+                  </span>
+                  <h3 class="project-title">Altitude</h3>
+                  <p>
+                    A premium outdoor commerce experience built around
+                    exploration, performance and visual storytelling.
+                  </p>
                 </div>
-                <div class="services-final-cta-divider"></div>
-                <div class="services-final-cta-text">
-                    <p>
-                        Let's discuss your idea and turn it into
-                        a solid, high-impact digital solution.
-                    </p>
+
+                <a href="project.html" class="project-arrow"> → </a>
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project-card project-card-small">
+              <a href="#" class="project-image">
+                <img src="images/projects-images/project2.avif" alt="" />
+              </a>
+              <div class="project-info">
+                <div>
+                  <span class="project-meta">
+                    E-commerce / Furniture · 2026
+                  </span>
+
+                  <h3 class="project-title">Forma</h3>
+                  <p>
+                    A refined furniture shopping experience focused on calm
+                    layouts, tactile visuals and effortless discovery.
+                  </p>
                 </div>
-                <div class="services-final-cta-action">
-                    <a href="contact.html" class="services-final-cta-button">
-                        Let's Talk
-                        <span>→</span>
-                    </a>
+                <a href="#" class="project-arrow"> → </a>
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project-card project-card-medium">
+              <a href="#" class="project-image">
+                <img src="images/projects-images/project3.avif" alt="" />
+              </a>
+
+              <div class="project-info">
+                <div>
+                  <span class="project-meta">
+                    Web App / Productivity · 2026
+                  </span>
+                  <h3 class="project-title">Habitus</h3>
+                  <p>
+                    A productivity platform designed to help users build better
+                    routines, track habits and stay focused.
+                  </p>
                 </div>
+                <a href="#" class="project-arrow"> → </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services-intro-section">
+        <div class="container services-intro-container">
+          <div class="services-intro-heading">
+            <div class="section-label services-intro-label">
+              <span>[03]</span>
+              <span>What I Do</span>
             </div>
-        </section>
+            <h2>Services<span class="section-dot">.</span></h2>
+          </div>
+          <div class="services-intro-content">
+            <p>
+              I design and build digital experiences that combine thoughtful
+              design, solid development and practical solutions for real
+              business needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-core" id="services-list">
+        <div class="container services-core-container">
+          <article class="services-core-item">
+            <span class="services-core-number">01</span>
+            <div class="services-core-content">
+              <i class="bi bi-code-slash"></i>
+              <h3>Web Development</h3>
+              <p>
+                Fast, responsive and scalable websites built with clean code,
+                modern technologies and a strong focus on performance.
+              </p>
+              <a href="#web-development"> Learn More → </a>
+            </div>
+          </article>
+          <article class="services-core-item">
+            <span class="services-core-number">02</span>
+            <div class="services-core-content">
+              <i class="bi bi-layers"></i>
+              <h3>Digital Solutions</h3>
+              <p>
+                Practical digital solutions designed to improve workflows,
+                strengthen your online presence and support real business needs.
+              </p>
+              <a href="#digital-solutions"> Learn More → </a>
+            </div>
+          </article>
+          <article class="services-core-item">
+            <span class="services-core-number">03</span>
+            <div class="services-core-content">
+              <i class="bi bi-window-stack"></i>
+              <h3>Web Applications</h3>
+              <p>
+                Custom web applications focused on usability, performance and
+                creating efficient digital experiences.
+              </p>
+              <a href="#web-applications"> Learn More → </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="process-preview" id="process">
+        <div class="container process-preview-container">
+          <div class="process-header">
+            <div class="process-heading">
+              <div class="section-label">
+                <span>[05]</span>
+              </div>
+              <h2>Process<span class="section-dot">.</span></h2>
+            </div>
+            <div class="process-intro">
+              <p>A clear and collaborative process from idea to launch.</p>
+              <a href="contact.html" class="section-link">
+                Let's work together →
+              </a>
+            </div>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-item">
+              <div class="process-top">
+                <span class="process-number">01</span>
+              </div>
+              <div class="process-content">
+                <h3>Discovery</h3>
+                <p>Goals, audience, requirements and project direction.</p>
+              </div>
+              <span class="process-arrow">→</span>
+            </article>
+
+            <article class="process-item">
+              <div class="process-top">
+                <span class="process-number">02</span>
+              </div>
+              <div class="process-content">
+                <h3>Planning</h3>
+                <p>Strategy, structure and the right technical approach.</p>
+              </div>
+              <span class="process-arrow">→</span>
+            </article>
+
+            <article class="process-item">
+              <div class="process-top">
+                <span class="process-number">03</span>
+              </div>
+              <div class="process-content">
+                <h3>Development</h3>
+                <p>
+                  Clean code, responsive implementation and continuous
+                  refinement.
+                </p>
+              </div>
+              <span class="process-arrow">→</span>
+            </article>
+
+            <article class="process-item">
+              <div class="process-top">
+                <span class="process-number">04</span>
+              </div>
+              <div class="process-content">
+                <h3>Launch</h3>
+                <p>Testing, optimization and delivery of the final product.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Button -->
+      <section class="services-final-cta">
+        <div class="container services-final-cta-container">
+          <div class="services-final-cta-heading">
+            <span class="services-final-cta-corner"></span>
+            <h2>
+              Have a Project<br />
+              in Mind<span class="section-dot">?</span>
+            </h2>
+          </div>
+          <div class="services-final-cta-divider"></div>
+          <div class="services-final-cta-text">
+            <p>
+              Let's discuss your idea and turn it into a solid, high-impact
+              digital solution.
+            </p>
+          </div>
+          <div class="services-final-cta-action">
+            <a href="contact.html" class="services-final-cta-button">
+              Let's Talk
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <a href="index.html">
+              <!-- Desktop / Laptop-->
+              <img
+                src="images/full-logo-2-white.png"
+                alt="William Carvalho logo"
+                class="footer-logo-desktop"
+              />
 
-                <!-- Logo -->
-                <div class="footer-logo">
-                    <a href="index.html">
-                        <!-- Desktop / Laptop-->
-                        <img src="images/full-logo-2-white.png" alt="William Carvalho logo" class="footer-logo-desktop">
+              <!-- Tablet / Mobile -->
+              <img
+                src="images/full-logo-white.png"
+                alt="William Carvalho logo"
+                class="footer-logo-mobile"
+              />
+            </a>
+          </div>
 
-                        <!-- Tablet / Mobile -->
-                        <img src="images/full-logo-white.png" alt="William Carvalho logo" class="footer-logo-mobile">
-                    </a>
-                </div>
+          <!-- Navigation -->
+          <nav class="footer-navigation" aria-label="Footer navigation">
+            <h2>Navigation</h2>
 
-                <!-- Navigation -->
-                <nav class="footer-navigation" aria-label="Footer navigation">
-                    <h2>Navigation</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
 
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+          <!-- Contact -->
+          <div class="footer-contact-section">
+            <h2>Get in touch</h2>
 
-                <!-- Contact -->
-                <div class="footer-contact-section">
-                    <h2>Get in touch</h2>
-
-                    <div class="footer-contact">
-                        <a href="mailto:hello@williamcarvalho.com">
-                            hello@williamcarvalhodev.com →
-                        </a>
-                        <p>Dublin, IE</p>
-                    </div>
-                </div>
-
-                <!-- Social -->
-                <div class="footer-social-section">
-                    <h2>Follow me</h2>
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/william-carvalhoo/" target="_blank"
-                            rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/williamcarvalhodev/" target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </a>
-                        <a href="https://www.instagram.com/williamcarvalhodev/" target="_blank"
-                            rel="noopener noreferrer">
-                            Instagram
-                        </a>
-                    </div>
-                </div>
+            <div class="footer-contact">
+              <a href="mailto:hello@williamcarvalho.com">
+                hello@williamcarvalhodev.com →
+              </a>
+              <p>Dublin, IE</p>
             </div>
+          </div>
 
-            <!-- Footer bottom -->
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2026 William Carvalho. All rights reserved.
-                </p>
-                <a href="#top" class="back-to-top">
-                    Back to top ↑
-                </a>
+          <!-- Social -->
+          <div class="footer-social-section">
+            <h2>Follow me</h2>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/in/william-carvalhoo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/williamcarvalhodev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.instagram.com/williamcarvalhodev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
             </div>
+          </div>
         </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 William Carvalho. All rights reserved.</p>
+          <a href="#top" class="back-to-top"> Back to top ↑ </a>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script/script.js"></script>
-</body>
-
+  </body>
 </html>
